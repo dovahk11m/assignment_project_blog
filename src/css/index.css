@@ -1,0 +1,155 @@
+/* 전체 초기화 */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #555555;
+}
+
+a {
+    all: unset;
+}
+
+/* 헤더 */
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.header--container {
+    width: 1000px;
+    height: 80px;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: start;
+    padding: 8px;
+    border: 1px dashed;
+}
+
+.header--titlebox {
+    font-size: 40px;
+    font-weight: bold;
+    border: 1px dashed;
+}
+
+.header--titlesettingbox {
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+    border: 1px dashed;
+    background-image: url("/src/img/gear.png");
+    background-size: cover;
+}
+
+/* 내비섹션 */
+section {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.inner {
+    width: 1000px;
+    height: 100%;
+    margin-top: 1rem;
+
+
+    display: flex;
+    align-items: start;
+}
+
+.navigation--container {
+    width: 200px;
+    height: 1200px;
+    background-color: #eeeeee;
+    border: 1px dashed;
+    display: flex;
+    justify-content: end;
+}
+
+.navigation--box {
+    position: fixed;
+    width: 170px;
+    height: 270px;
+
+    border: 1px dashed;
+}
+
+.contents--container {
+    width: 800px;
+    height: 1200px;
+    border: 1px dashed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contents--box {
+    width: 730px;
+    margin-bottom: 1rem;
+    background-color: #eeeeee;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.contentsupper {
+    justify-content: space-between;
+}
+
+.contentsmain {
+    justify-content: space-between;
+    align-content: space-between;
+    height: 1040px;
+}
+
+
+.contentsupper--titlebuttonbox {
+    border: 1px dashed;
+    margin-left: 1rem;
+}
+
+.buttonbox--botton {
+    width: 2rem;
+    height: 2rem;
+
+    background-image: url("/src/img/edit.png");
+    background-size: cover;
+}
+
+.contentsmain--card {
+    width: 150px;
+    height: 250px;
+    border: 1px dashed;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card--imagebox {
+    width: 150px;
+    height: 125px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 125px;
+}
+
+.card--textbox {
+    width: 150px;
+    height: 100px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.card--datebox {
+    width: 150px;
+    height: 25px;
+    background-color: #fff;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+/* 콘텐츠섹션 */
