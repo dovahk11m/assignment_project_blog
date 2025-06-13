@@ -44,7 +44,7 @@ header {
     background-size: cover;
 }
 
-/* 내비섹션 */
+/* 섹션 */
 section {
 
     display: flex;
@@ -62,23 +62,45 @@ section {
     align-items: start;
 }
 
+/* 내비게이션 */
 .navigation--container {
     width: 200px;
     height: 1200px;
-    background-color: #eeeeee;
     border: 1px dashed;
     display: flex;
     justify-content: end;
 }
 
-.navigation--box {
+.navigation--floatingbox {
     position: fixed;
     width: 170px;
     height: 270px;
-
-    border: 1px dashed;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
+.floatingbox--navigation {
+    font-size: 14px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav--new {
+    width: 12px;
+    height: 12px;
+    font-size: 10px;
+
+    color: white;
+    background-color: orangered;
+    border-radius: 1px;
+    text-align: center;
+    line-height: 12px;
+}
+
+/* 콘텐츠 */
 .contents--container {
     width: 800px;
     height: 1200px;
@@ -96,16 +118,10 @@ section {
     display: flex;
 }
 
+/* 상부 - 정보박스 */
 .contentsupper {
     justify-content: space-between;
 }
-
-.contentsmain {
-    justify-content: space-between;
-    align-content: space-between;
-    height: 1040px;
-}
-
 
 .contentsupper--titlebuttonbox {
     border: 1px dashed;
@@ -118,6 +134,13 @@ section {
 
     background-image: url("/src/img/edit.png");
     background-size: cover;
+}
+
+/* 중부 - 메인박스 */
+.contentsmain {
+    justify-content: space-between;
+    align-content: space-between;
+    height: 1040px;
 }
 
 .contentsmain--card {
@@ -152,4 +175,25 @@ section {
     padding: 0 10px;
 }
 
-/* 콘텐츠섹션 */
+/* 하부 - 인덱스박스 */
+.contentslower {
+    justify-content: center;
+}
+
+.contentslower--indexbox {
+    width: 600px;
+    border: 1px dashed;
+    display: flex;
+    justify-content: center;
+}
+
+.indexbox--number {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.indexbox--index {
+    width: 150px;
+    text-align: center;
+}
